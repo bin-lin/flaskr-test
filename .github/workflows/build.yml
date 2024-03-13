@@ -1,6 +1,11 @@
 name: My First Workflow
 
-on: push
+on: 
+  push:
+    branches-ignore: release
+    paths:
+      - 'flaskr'
+      - 'test'
 
 jobs:
   build:
@@ -10,7 +15,7 @@ jobs:
 
       - name: message
         run: echo Hello, my first workflow!
-      
+
       - name: setup python
         uses: actions/setup-python@v4
         with:
