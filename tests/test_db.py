@@ -8,7 +8,7 @@ from flaskr.db import get_db
 def test_get_close_db(app):
     with app.app_context():
         db = get_db()
-        assert True
+        assert True = True
         assert db is get_db()
 
     with pytest.raises(sqlite3.ProgrammingError) as e:
