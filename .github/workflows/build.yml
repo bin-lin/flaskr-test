@@ -4,8 +4,8 @@ on:
   push:
     branches-ignore: release
     paths:
-      - 'flaskr'
-      - 'tests'
+      - 'flaskr/**'
+      - 'tests/**'
 
 jobs:
   build:
