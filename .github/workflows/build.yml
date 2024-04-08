@@ -29,8 +29,7 @@ jobs:
       
       - name: Lint with flake8
         run: flake8 . --count ERROR HERE
-        if: github.ref == 'refs/heads/main'
-        continue-on-error: true
+
 
       - name: Run tests with coverage report
         run: |
